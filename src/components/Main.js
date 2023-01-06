@@ -80,7 +80,7 @@ const Main = () => {
     <div
      className="flex"
      >
-      <h3 className="person">Add Person</h3>
+      <h3 >Add Person</h3>
       <div>
         <table>
           <thead>
@@ -103,25 +103,25 @@ const Main = () => {
                   <td>
                     <input
                       defaultValue={e.DateOfBirth}
-                     // className="input-date"
+                    
                       type={"date"}
                     />
                   </td>
                   <td>
                     <input
-                    //className="input-num" 
+                  
                     defaultValue={e.ANumber}type={"number"}
                     />
                   </td>
                   <td>
-                    <input  className="input-num" defaultValue={e.MobileNumber}type={"number"}
+                    <input   defaultValue={e.MobileNumber}type={"number"}
                     />
                   </td>
                   <td>{e.Age}</td>
                   <td>
                     <button >Save</button>
                     <button
-                      //className="action"
+                   
                       onClick={() => removeAfterSave(e)}
                     >
                       Delete
@@ -133,7 +133,7 @@ const Main = () => {
             <tr style={{ display: hide }}>
               <td>
                 <input 
-                // className="input-num"
+                
                   value={name}
                   type={"text"}
                   onChange={(e) => setName(e.target.value)}
@@ -142,7 +142,7 @@ const Main = () => {
               <td>
                 <input 
                   value={dob}
-                 // className="input-date"
+               
                   type={"date"}
                   onChange={(e) => setDob(e.target.value)}
                 />
@@ -170,7 +170,7 @@ const Main = () => {
           </tbody>
         </table>
       </div>
-      <button className="add" onClick={() => display()}>
+      <button  onClick={() => display()}>
         Add
       </button>
     </div>
